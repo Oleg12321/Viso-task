@@ -13,7 +13,7 @@ const IngredientList: React.FC<IngredientListProps> = ({ selectedRecipes }) => {
 		selectedRecipes.forEach(recipe => {
 			for (let i = 1; i <= 20; i++) {
 				const ingredient = recipe[`strIngredient${i}`]
-				if (ingredient && ingredient.trim()) {
+				if (ingredient && typeof ingredient === 'string' && ingredient.trim()) {
 					// Якщо інгредієнт вже є в списку, збільшуємо його кількість
 					ingredients[ingredient] = ingredients[ingredient]
 						? ingredients[ingredient] + 1

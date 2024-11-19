@@ -4,6 +4,7 @@ import { fetchCategories } from '../../services/api'
 import { Category } from '../../services/types'
 
 
+
 interface CategoryFilterProps {
 	onCategorySelect: (category: string) => void
 }
