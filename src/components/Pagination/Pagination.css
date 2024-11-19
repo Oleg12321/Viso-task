@@ -1,0 +1,77 @@
+/* Загальні стилі для контейнера пагінації */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 10px 0;
+}
+
+/* Кнопки попередня та наступна */
+.pagination a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+  margin: 0 8px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination a.disabled {
+  color: #ccc;
+  pointer-events: none;
+}
+
+/* Активна сторінка */
+.pagination .active a {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Клас для крапок */
+.pagination .break {
+  color: #007bff;
+  font-size: 18px;
+  margin: 0 8px;
+}
+
+/* Оформлення кнопок */
+.pagination .pagination-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.pagination .pagination-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Відображення крапок */
+.pagination .break {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.pagination .pagination-button:focus {
+  outline: none;
+}
+
+.pagination .disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}

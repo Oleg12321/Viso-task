@@ -1,0 +1,26 @@
+.recipe-item {
+  width: 250px;
+	border: 1px solid #ccc;
+	margin: 10px;
+	opacity: 0;
+	animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.link-box {
+	display: block;
+	padding: 10px;
+}
+.btn-add-recipe-local{
+  display: block;
+  margin: 0 auto 10px;
+
+}
