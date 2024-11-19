@@ -5,9 +5,9 @@ import CategoryFilter from '../../components/CategoryFilter/CategoryFilter'
 import Pagination from '../../components/Pagination/Pagination'
 import { useDebounce } from '../../hooks/useDebounce'
 import { useSelectedRecipes } from '../../context/SelectedRecipesContext'
-
-import './recipesPage.css'
 import { Recipe } from '../../services/types'
+import './RecipesPage.css'
+
 
 const RecipesPage: React.FC = () => {
 	const { selectedRecipes, addRecipe } = useSelectedRecipes()
